@@ -32,6 +32,16 @@
     display: inline-block;
     cursor: pointer;
   }
+  .map-letters {
+    text-align: left; 
+    line-height: 2rem; 
+  }
+  
+  .big-letter {
+    font-size: 2.5rem; 
+    display: inline-block; 
+    margin-right: 5px; 
+  }
 
   .icon {
     width: 24px; /* Set the desired width */
@@ -51,6 +61,24 @@
     margin: 0; /* Remove any extra margins */
   }
   .photome:hover{
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .container-fluid {
+    height: 100vh; /* Make the container take the full height of the viewport */
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center-align the text */
+  }
+  
+  .centered-text {
+    font-size: 2rem; /* Adjust the font size */
+    color: white; /* Set the text color */
+    font-weight: bold; /* Make the text bold */
+  }
+  .centered-text:hover{
     transform: scale(1.2);
     transition: all 0.3s ease-in-out;
   }
