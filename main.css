@@ -4,6 +4,17 @@
   font-weight: 400;
   font-style: normal;
 }
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 * {
     margin: 0;
     padding: 0;
@@ -24,14 +35,14 @@
     justify-content: center;
     text-decoration: none;
   }
-  #section1,#section2,#section3,#section4 h1 {
+/*#section1,#section2,#section3,#section4 h1 {
     text-align: center;
     margin: 0 auto;
     padding: 2rem 0;
     font-size: 2rem;
     display: inline-block;
     cursor: pointer;
-  }
+  }*/
   .map-letters {
     text-align: left; 
     line-height: 2rem; 
@@ -77,8 +88,26 @@
     font-size: 2rem; /* Adjust the font size */
     color: white; /* Set the text color */
     font-weight: bold; /* Make the text bold */
+    margin-top: 300px; /* Add some margin to the top */;
   }
   .centered-text:hover{
     transform: scale(1.2);
     transition: all 0.3s ease-in-out;
+  }
+  .centered-text#aboutme:hover{
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .spin {
+    animation: spin 2s linear infinite; /* Spins continuously */
   }
